@@ -10,10 +10,12 @@ import '@fontsource/roboto/700.css';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 
+
 export default function Navbar() {
     //   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     //   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] =
     //     React.useState<null | HTMLElement>(null);
+
 
     //   const isMenuOpen = Boolean(anchorEl);
     //   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -111,26 +113,26 @@ export default function Navbar() {
     //   );
 
     return (
-        <div style={{ display: "flex", width: "100%", justifyContent: "space-between" }}>
+        <div style={{ display: "flex", width: "100%", justifyContent: "space-between" ,  background: "transparent"}}>
 
             <div style={{ display: "flex", border: "0", margin: "0" }}>
-                <img width="70px" src="https://i.ibb.co/K9NfKFW/wired-gradient-62-film.png" alt="wired-gradient-62-film" border="0" />
+            <Link to="/"> <img width="70px" src="https://i.ibb.co/K9NfKFW/wired-gradient-62-film.png" alt="wired-gradient-62-film" border="0" /></Link>
                 <Link to="/"><Button><h3>MOVIE WORLD</h3></Button></Link>
             </div>
 
-            <div style={{ display: "flex", border: "0", margin: "0" }}>
+
+
+            <div style={{ display: "flex", border: "0", margin: "0", marginRight:"5%" }}>
                 <ButtonGroup variant="text" aria-label="text button group">
-                    <Button >HOME</Button>
+                    <Button  >HOME</Button>
                     <Button>MOVIES</Button>
                     <Button>TV SHOWS</Button>
                 </ButtonGroup>
             </div>
 
             <div >
-
                 {/* <Button> <AccountCircle /></Button>
                     <Button>  <MenuIcon /></Button> */}
-
 
                 <IconButton style={{ marginRight: "1px" }}
                     size="large"
@@ -139,7 +141,8 @@ export default function Navbar() {
                     //   aria-controls={menuId}
                     aria-haspopup="true"
                     //   onClick={handleProfileMenuOpen}
-                    color="inherit"
+                    color="primary"
+                  
                 >
                     <AccountCircle  fontSize="inherit"/>
                 </IconButton>
@@ -147,12 +150,14 @@ export default function Navbar() {
                 <IconButton
                     size="large"
                     edge="start"
-                    color="inherit"
-                    aria-label="open drawer"
-                >
-                    <MenuIcon fontSize="inherit"/>
+                    color="primary"
+                    aria-label="open drawer">
+                    <MenuIcon  fontSize="inherit"/>
                 </IconButton>
+
             </div>
+
+            
             {/* <div className='mobie' >
             <IconButton
               size="large"
